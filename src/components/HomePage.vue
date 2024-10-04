@@ -20,9 +20,7 @@
   </template>
    
   <script>
-  // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from 'swiper/vue';
-  // Import Swiper styles
   import 'swiper/css';
   import 'swiper/css/navigation';
   import 'swiper/css/pagination';
@@ -36,12 +34,10 @@
       const items = [
         {
           title: 'Spider-Man: Far from Home',
-          description: 'Following the events of Avengers: Endgame...',
   image: 'https://link-para-a-imagem-do-spiderman.jpg'
         },
         {
           title: 'Justice League',
-          description: 'Determined to ensure Superman\'s ultimate...',
   image: 'https://link-para-a-imagem-do-justice-league.jpg'
         },
         {
@@ -70,8 +66,7 @@
    
   <style scoped>
   .carousel-image {
-    width: 100%;
-    height: 100%;
+    width: 500%;
     border-radius: 10px;
   }
    
@@ -81,6 +76,6 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 10px;
-    margin-top: -60px;
+    margin-top: 100px;
   }
   </style>

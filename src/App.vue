@@ -9,6 +9,10 @@
     <nav>
       <router-link to="/aboutUS">Sobre nós</router-link>
     </nav> 
+    <nav>
+      <router-link to="/LoginForm">Login </router-link>
+    </nav>
+    
   </div> 
   <router-View></router-View>
 </template>

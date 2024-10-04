@@ -6,7 +6,6 @@
 
 <div class="tableee">
     <div v-for="(integrante, index) in integranteList" :key="index">
-        <p>ID:{{index + 1}}</p>
         <p>Nome: {{integrante.nome}}</p>
         <p>Idade: {{integrante.idade}}</p>
         <p>Frase: {{integrante.frase}}</p>
@@ -22,20 +21,27 @@
 export default{
     data(){
         return {
-            integranteList:[],
-            nome:'',
-            idade:'',
-            frase:'',
-            image:''
+            integranteList:[
+                {
+                    "nome": "Clara",
+                    "idade": "20",
+                    "frase": "jrfrejedsadka",
+                    "image": "image.img"}
+                ,
+                {
+                    "nome": "Julia",
+                    "idade": "18",
+                    "frase": "jrfrejedsadka",
+                    "image": "image.img"}
+                ,
+                {
+                    "nome": "Niccole",
+                    "idade": "17",
+                    "frase": "jrfrejedsadka",
+                    "image": "image.img"}
+            ]
         }
-    },
-    methods: {
-        fillList(){
-            this.integranteList.push(
-            integranteList[0].nome='Clara'
-
-        )
-        }}}
+    }}
 </script>
 
 

@@ -1,6 +1,6 @@
 <template>
     <form action="">
-    <h1> Contate-nos </h1>
+    <h1> Login </h1>
         <div style="background-color: transparent; display: flex; height: 390px; justify-content: center; align-items: center; ">
         <div class="box1">
         <div>
