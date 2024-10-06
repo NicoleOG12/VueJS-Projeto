@@ -46,28 +46,29 @@ export default {
   setup() {
     const slides = [
       {
-        image: 'https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg',
-        title: 'Natureza Exuberante',
+        image: 'https://www.pingodoce.pt/wp-content/uploads/2022/03/bolo-de-maracuja-e-framboesa.jpg',
+        title: 'Bolo de Maracujá com Framboesa',
         description: 'Uma bela vista da natureza que nos inspira.',
+        borderradius: '30px',
       },
       {
-        image: 'https://services.meteored.com/img/article/inteligencia-artificial-aprende-a-reconstruir-imagens-vistas-por-pessoas-ciencia-fotos-1679175318563_1024.jpg',
-        title: 'Inovação Tecnológica',
+        image: 'https://static.wixstatic.com/media/9ec495_abf8683a19354fe39ac3a1644a68f217~mv2_d_2658_1772_s_2.jpg/v1/fill/w_530,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Bolo%20Kit%20Kat%20Brigadeiro%20Morango.jpg',
+        title: 'Bolo de Brigadeiro com Morango',
         description: 'A tecnologia moldando nosso futuro.',
       },
       {
-        image: 'https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg',
-        title: 'Vida Selvagem',
+        image: 'https://static.wixstatic.com/media/9ec495_c6407691a6814272a8fd8283ea4ebab3~mv2.jpeg/v1/fill/w_532,h_434,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-07-08%20at%2015_33_37.jpeg',
+        title: 'Bolo de Limão',
         description: 'Explorando a beleza da vida selvagem.',
       },
       {
-        image: 'https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg',
-        title: 'Amanhecer',
+        image: 'https://img.freepik.com/fotos-premium/torta-de-morango-fresco-com-morangos-frescos_787273-5446.jpg',
+        title: 'Bolo de Frutas Vermelhas',
         description: 'Um novo dia começa com novas esperanças.',
       },
       {
-        image: 'https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg',
-        title: 'Aventura',
+        image: 'https://static.wixstatic.com/media/9a6aa3_c4ac9d1ce3ad4fd385e54b21cdd88904~mv2.jpg/v1/fill/w_560,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9a6aa3_c4ac9d1ce3ad4fd385e54b21cdd88904~mv2.jpg',
+        title: 'Bolo de Blueberry com Framboesa',
         description: 'Aventura em meio à natureza.',
       },
     ];
@@ -118,26 +119,7 @@ body {
   background-color: rgb(240, 201, 226);
 }
 .page-container {
-  margin: 70px; /* Ajuste o valor conforme necessário */
-}
-
-.menu {
-  margin-bottom: 20px; /* Espaçamento entre o menu e o swiper */
-}
-
-.menu nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.menu nav ul li {
-  display: inline;
-  margin-right: 15px; /* Espaçamento entre os itens do menu */
-}
-
-.menu nav ul li a {
-  text-decoration: none;
-  color: #000; /* Cor do texto */
+  margin: 70px; 
 }
 
 .swiper-container {
@@ -146,7 +128,7 @@ body {
 
 .my-swiper {
   width: 100%;
-  height: 300px;
+  height: 450px;
 }
 
 .slide {
@@ -161,9 +143,10 @@ body {
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 200%;
+  height: 90%;
+  border-radius: 30px;
+
 }
 
 .caption {
@@ -187,14 +170,14 @@ body {
 }
 
 .active {
-  transform: scale(1); /* Aumenta a imagem ativa */
-  z-index: 20; /* Traz o slide ativo para frente */
+  transform: scale(1); 
+  z-index: 20; 
 }
 
 .slide:not(.active) {
-  transform: scale(0.6); /* Diminui os outros slides */
-  z-index: 10; /* Coloca os outros slides atrás */
-  opacity: 0.5; /* Mantém a opacidade reduzida */
+  transform: scale(0.6); 
+  z-index: 10; 
+  opacity: 0.5; 
 }
 
 .nav-button {
@@ -204,12 +187,12 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   border: none;
-  border-radius: 50%; /* Botões circulares */
-  width: 40px; /* Tamanho dos botões */
-  height: 40px; /* Tamanho dos botões */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px; 
   cursor: pointer;
   z-index: 20;
-  font-size: 20px; /* Tamanho das setas */
+  font-size: 20px; 
 }
 
 .prev-button {
