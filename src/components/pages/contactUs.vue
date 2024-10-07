@@ -38,9 +38,10 @@
     color: rgb(255, 255, 255);
 }
 .box1{
-    background-color: rgb(255, 0, 55);
+    background-color: rgb(255, 152, 152);
     width: 500px;
-    height: 300px
+    height: 300px;
+    border-radius: 20px;
 
 }
 </style>

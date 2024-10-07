@@ -1,29 +1,23 @@
 <template>
     <form action="">
-    <h1> Login </h1>
-        <div style="background-color: transparent; display: flex; height: 390px; justify-content: center; align-items: center; ">
+        <h1 style="margin-top: 70px; color: hotpink;"> Login </h1> 
+        <div style="background-color: transparent; display: flex; height: 390px; width: 1000px; text-align: center; justify-content: center; 
+        align-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    
+
         <div class="box1">
-        <div>
+        <div class="box2">
             <p class="subtitulo">E-mail</p>
-        <textarea name="nome" id="" >Nome</textarea>
+            <input type="text">
         </div>
 
-        <div>
-            <p class="subtitulo">Assunto</p>
-            <select name="" id="">
-                <option value="">teste</option>
-                <option value="">teste2</option>
-                <option value="">teste3</option>
-                <option value="">teste4</option>
-            </select>
+        
+        <div class="box3">
+            <p class="subtitulo">Senha</p>
+            <input type="text">
             
         </div>
-        <div>
-            <p class="subtitulo">Mensagem</p>
-            <textarea typeof="" name="" id="" ></textarea>
-            
-        </div>
-        <input type="submit">
+        <input class="botao" type="submit">
         </div>
         </div>
     </form>
@@ -36,11 +30,28 @@
 <style>
 .subtitulo{
     color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 }
 .box1{
-    background-color: rgb(255, 0, 55);
+    background-color: rgb(255, 137, 163);
     width: 500px;
-    height: 300px
+    height: 350px
 
+}
+.botao{
+    background-color: rgb(255, 0, 64);
+    border-color: white;
+    border-radius: 10px;
+    width: 110px;
+    height: 50px;
+    margin-top: 40px;
+    color: white;
+    
+}
+
+.box2{
+    margin-top: 50px;
 }
 </style>
