@@ -28,6 +28,7 @@
       <button @click="nextSlide" class="nav-button next-button">&#9654;</button>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -38,10 +39,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+
 export default {
   components: {
     Swiper,
     SwiperSlide,
+ 
   },
   setup() {
     const slides = [

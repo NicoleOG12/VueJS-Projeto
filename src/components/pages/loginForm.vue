@@ -5,7 +5,7 @@
         align-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
     
 
-        <div class="box1">
+        <div class="boxOne">
         <div class="box2">
             <p class="subtitulo">E-mail</p>
             <input type="text">
@@ -34,10 +34,11 @@
     font-weight: 500;
     font-size: 20px;
 }
-.box1{
-    background-color: rgb(255, 137, 163);
+.boxOne{
+    background-color: #ff89a3;
     width: 500px;
-    height: 350px
+    height: 350px;
+    border-radius: 20px;
 
 }
 .botao{
