@@ -51,28 +51,28 @@ export default {
       {
         image: 'https://www.pingodoce.pt/wp-content/uploads/2022/03/bolo-de-maracuja-e-framboesa.jpg',
         title: 'Bolo de Maracujá com Framboesa',
-        description: 'Uma bela vista da natureza que nos inspira.',
+        description: '',
         borderradius: '30px',
       },
       {
         image: 'https://static.wixstatic.com/media/9ec495_abf8683a19354fe39ac3a1644a68f217~mv2_d_2658_1772_s_2.jpg/v1/fill/w_530,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Bolo%20Kit%20Kat%20Brigadeiro%20Morango.jpg',
         title: 'Bolo de Brigadeiro com Morango',
-        description: 'A tecnologia moldando nosso futuro.',
+        description: '',
       },
       {
         image: 'https://static.wixstatic.com/media/9ec495_c6407691a6814272a8fd8283ea4ebab3~mv2.jpeg/v1/fill/w_532,h_434,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-07-08%20at%2015_33_37.jpeg',
         title: 'Bolo de Limão',
-        description: 'Explorando a beleza da vida selvagem.',
+        description: '',
       },
       {
         image: 'https://img.freepik.com/fotos-premium/torta-de-morango-fresco-com-morangos-frescos_787273-5446.jpg',
         title: 'Bolo de Frutas Vermelhas',
-        description: 'Um novo dia começa com novas esperanças.',
+        description: '',
       },
       {
         image: 'https://static.wixstatic.com/media/9a6aa3_c4ac9d1ce3ad4fd385e54b21cdd88904~mv2.jpg/v1/fill/w_560,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/9a6aa3_c4ac9d1ce3ad4fd385e54b21cdd88904~mv2.jpg',
         title: 'Bolo de Blueberry com Framboesa',
-        description: 'Aventura em meio à natureza.',
+        description: '',
       },
     ];
 
