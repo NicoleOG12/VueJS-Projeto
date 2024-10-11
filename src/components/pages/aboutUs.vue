@@ -24,7 +24,7 @@ export default{
                     "nome": "Clara",
                     "idade": "20",
                     "frase": "",
-                    "image": "https://i.pinimg.com/736x/e9/34/68/e93468d7e331fdd38a3d6535e85408b7.jpg"}
+                    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpowerpuffgirls.fandom.com%2Fwiki%2FList_of_characters&psig=AOvVaw2iaERqWGZCrCOqTlWtwwc7&ust=1728758022009000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCO6Nb7hokDFQAAAAAdAAAAABAb"}
                 ,
                 {
                     "nome": "Julia",

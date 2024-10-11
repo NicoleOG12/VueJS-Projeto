@@ -78,7 +78,7 @@
 .popup .popup-content {
     background-color: rgb(255, 167, 218);
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgb(255, 136, 0);
+    text-shadow: 0 0 3px rgb(255, 136, 0);
 }
 
 </style>
