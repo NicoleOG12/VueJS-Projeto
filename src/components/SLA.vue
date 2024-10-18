@@ -12,7 +12,14 @@
                 <p>Ops, algum erro aconteceu;</p>
             </div>
 
-            <div v-else>
+            <div v-else v-for="characters in characters":key= "characters.id=" class="col-md-4"">
+                <div class="card mb-4">
+                    <img :src="character.imageUri" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ characters.name }}</h5>
+
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -21,6 +28,8 @@
 </template>
 
 <script>
+import { keyFor } from 'core-js/fn/symbol';
+
 export default {
     data(){
         return{
