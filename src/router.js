@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage.vue";
 import contactUs from "./components/pages/contactUs.vue";
 import aboutUs from "./components/pages/aboutUs.vue";
 import loginForm from "./components/pages/LoginForm.vue";
+import NewPage from "./components/NewPage.vue";
 
 const routes = [
     {
@@ -24,6 +25,12 @@ const routes = [
         path: '/loginForm',
         name: 'Login',
         component: loginForm
+    },
+
+    {
+        path: '/NewPage',
+        name: 'NewPage',
+        component: NewPage
     }
 
 ];

@@ -7,6 +7,7 @@
           <li><router-link to="/contactUs">Contate-nos</router-link></li>
           <li><router-link to="/aboutUS">Sobre nós</router-link></li>
           <li><router-link to="/LoginForm">Login</router-link></li>
+          <li><router-link to="/NewPage">NewPage</router-link></li>
           
         </ul>
       </nav>

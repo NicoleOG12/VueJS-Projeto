@@ -12,9 +12,9 @@
                 <p>Ops, algum erro aconteceu;</p>
             </div>
 
-            <div v-else v-for="characters in characters":key= "characters.id=" class="col-md-4"">
+            <div v-else v-for= "characters in characters" :key= "characters.id" class="col-md-4">
                 <div class="card mb-4">
-                    <img :src="character.imageUri" class="card-img-top">
+                    <img :src="characters.imageUri" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{ characters.name }}</h5>
 
@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import { keyFor } from 'core-js/fn/symbol';
 
 export default {
     data(){
@@ -37,6 +36,30 @@ export default {
             loading:true,
             error: false
         }
+    },
+    methods:{
+        fetchNewPage(){
+            fetch('https://dattebayo-api.onrender.com/characters')
+                .then(response =>{
+                    if (!response.ok){
+                        throw new Error ("NetWork error");
+                    }
+                    return response.json();
+                })
+                .then(data =>{
+                    console.log(data)
+
+                    this.characters = data;
+                    this.loading = false;
+                })
+                .catch(()=>{
+                    this.error = true;
+                    this.loading = false;
+                })
+        }
+    },
+    mounted (){
+        this.fetchNewPage();
     }
 }
 </script>
