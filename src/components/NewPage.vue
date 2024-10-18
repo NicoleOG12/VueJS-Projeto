@@ -14,7 +14,7 @@
 
             <div v-else v-for= "characters in characters" :key= "characters.id" class="col-md-4">
                 <div class="card mb-4">
-                    <img :src="characters.imageUri" class="card-img-top">
+                    <img :src="characters.images[0]" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{ characters.name }}</h5>
 
@@ -33,8 +33,9 @@ export default {
     data(){
         return{
             characters:[],
+            images: [],
             loading:true,
-            error: false
+            error: false,
         }
     },
     methods:{
@@ -48,8 +49,7 @@ export default {
                 })
                 .then(data =>{
                     console.log(data)
-
-                    this.characters = data;
+                    this.characters = data.characters;
                     this.loading = false;
                 })
                 .catch(()=>{
@@ -63,5 +63,4 @@ export default {
     }
 }
 </script>
-
 <style></style>
