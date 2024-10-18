@@ -24,13 +24,18 @@ export default{
                     "nome": "Clara",
                     "idade": "20",
                     "frase": "",
-                    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpowerpuffgirls.fandom.com%2Fwiki%2FList_of_characters&psig=AOvVaw2iaERqWGZCrCOqTlWtwwc7&ust=1728758022009000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCO6Nb7hokDFQAAAAAdAAAAABAb"}
+                    "image": "https://i.pinimg.com/736x/c0/3e/ad/c03ead78366bf1772100012576a5d32e.jpg"}
+
+ 
+
+
+
                 ,
                 {
                     "nome": "Julia",
                     "idade": "18",
                     "frase": "jrfrejedsadka",
-                    "image": "https://i.pinimg.com/736x/e9/34/68/e93468d7e331fdd38a3d6535e85408b7.jpg"}
+                    "image": "https://i.pinimg.com/236x/95/de/a8/95dea837baa9cbb828f1708f3832341d.jpg"}
                 ,
 
 
@@ -39,7 +44,7 @@ export default{
                     "nome": "Nicole",
                     "idade": "17",
                     "frase": "Lute. Acredite. Conquiste. Perca. Deseje. Espere. Alcance. Invada. Caia. Seja tudo o quiser ser, mas, acima de tudo, seja você sempre.",
-                    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpowerpuffgirls.fandom.com%2Fwiki%2FList_of_characters&psig=AOvVaw2iaERqWGZCrCOqTlWtwwc7&ust=1728758022009000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCO6Nb7hokDFQAAAAAdAAAAABAE"}
+                    "image":"https://i.pinimg.com/736x/a1/12/bd/a112bd99bb4f3952c1d7599ad43e7ff6.jpg"}
             ]
         }
     }}
