@@ -38,6 +38,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .menu {

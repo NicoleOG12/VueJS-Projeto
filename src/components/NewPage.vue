@@ -79,6 +79,5 @@ export default {
 <style>
 dropdown{
     background-color: rgb(255, 0, 166);
-
 }
 </style>
