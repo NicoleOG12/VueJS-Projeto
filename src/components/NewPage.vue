@@ -18,13 +18,15 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ characters.name }}</h5>
                     </div>
-                          
+                        <router-link :to="{name: 'NarutoDetail', params: {id: characters.id}}">
+                            Detalhes
+                        </router-link>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                  Dropdown button
                             </button>
                                 <ul class="dropdown-menu">
-                                    <li v-for="jutsu in characters.jutsu" :key="jutsu.id">
+                                    <li v-for="jutsu in characters.jutsu" :key="jutsu.id" class="listadejutsus">
                                         <a class="dropdown-item">{{ jutsu }}</a>
 
                                     </li>
@@ -76,6 +78,5 @@ export default {
 <style>
 dropdown{
     background-color: rgb(255, 0, 166);
-
 }
 </style>
