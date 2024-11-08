@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./components/HomePage.vue";
 import contactUs from "./components/pages/contactUs.vue";
 import aboutUs from "./components/pages/aboutUs.vue";
-import loginForm from "./components/pages/LoginForm.vue";
 import NewPage from "./components/NewPage.vue";
+import NarutoDetail from "./components/NarutoDetail.vue";
 
 const routes = [
     {
@@ -21,16 +21,18 @@ const routes = [
         name: 'Sobre nós',
         component: aboutUs
     },
-    {
-        path: '/loginForm',
-        name: 'Login',
-        component: loginForm
-    },
 
     {
         path: '/NewPage',
         name: 'NewPage',
         component: NewPage
+    },
+
+    {
+        path: '/naruto/:id',
+        name: 'detalhes',
+        component: NarutoDetail,
+        props: true
     }
 
 ];

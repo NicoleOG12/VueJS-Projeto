@@ -8,23 +8,35 @@
             </div>
 
             <!--Exibe uma mensagem de erro caso a api falhe-->
-            <div v-if="error" class="col-12 text-center">  
+            <div v-if="error" class="col-12 text-center" >  
                 <p>Ops, algum erro aconteceu;</p>
             </div>
 
             <div v-else v-for= "characters in characters" :key= "characters.id" class="col-md-4">
                 <div class="card mb-4">
-                    <img :src="characters.imageUri" class="card-img-top">
+                    <img :src="characters.images[0]" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{ characters.name }}</h5>
-
+                        <router-link :to="{name: 'detalhes', params: {id: characters.id}}">
+                            Detalhes
+                        </router-link>
                     </div>
-                </div>
+                          
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 Dropdown button
+                            </button>
+                                <ul class="dropdown-menu">
+                                    <li v-for="jutsu in characters.jutsu" :key="jutsu.id">
+                                        <a class="dropdown-item">{{ jutsu }}</a>
 
-            </div>
+                                    </li>
+                                </ul>
+                        </div>         
+                </div>
+            </div>      
         </div>
     </div>
-
 </template>
 
 <script>
@@ -33,8 +45,10 @@ export default {
     data(){
         return{
             characters:[],
+            images: [],
+            jutsu: [],
             loading:true,
-            error: false
+            error: false,
         }
     },
     methods:{
@@ -48,8 +62,7 @@ export default {
                 })
                 .then(data =>{
                     console.log(data)
-
-                    this.characters = data;
+                    this.characters = data.characters;
                     this.loading = false;
                 })
                 .catch(()=>{
@@ -63,5 +76,9 @@ export default {
     }
 }
 </script>
+<style>
+dropdown{
+    background-color: rgb(255, 0, 166);
 
-<style></style>
+}
+</style>
